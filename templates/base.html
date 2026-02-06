@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flask Simple (No DB)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        max-width: 820px;
+      }
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        padding: 16px;
+        margin-top: 14px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+      }
+      button {
+        padding: 10px 14px;
+        border-radius: 10px;
+        border: 1px solid #333;
+        background: white;
+        cursor: pointer;
+      }
+      code {
+        background: #f5f5f5;
+        padding: 2px 6px;
+        border-radius: 6px;
+      }
+      .error {
+        background: #fde8e8;
+        border: 1px solid #f5b5b5;
+      }
+      .ok {
+        background: #e7f7ea;
+        border: 1px solid #b9e2c0;
+      }
+      a {
+        color: #0b57d0;
+      }
+    </style>
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>

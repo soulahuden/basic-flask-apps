@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+<h1>Result</h1>
+
+{% if ok %}
+<p><b>Name:</b> {{ name }}</p>
+<p><b>Message:</b> {{ message }}</p>
+<p><b>Timestamp:</b> {{ timestamp }}</p>
+{% else %}
+<p><b>Reason:</b> {{ error }}</p>
+<p><b>Timestamp:</b> {{ timestamp }}</p>
+{% endif %}
+
+<p><a href="/">Back</a></p>
+{% endblock %}

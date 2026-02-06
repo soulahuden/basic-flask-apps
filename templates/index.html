@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<h1>Basic Flask Apps</h1>
+<p>Aplikasi sederhana menggunakan Python Flask</p>
+
+<div class="card">
+  <h2>Isi something</h2>
+  <form method="post" action="/submit">
+    <label>Name</label>
+    <input name="name" placeholder="Nama kamu" required />
+
+    <label>Message</label>
+    <textarea
+      name="message"
+      rows="4"
+      placeholder="Tulis pesan..."
+      required
+    ></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+{% endblock %}
